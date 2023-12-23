@@ -1,12 +1,8 @@
 pipeline {
-  agent {
-    node {
-      label 'ssh-agent'
-    }
-
-  }
+  agent any
   stages {
     stage('Build') {
+      agent any
       steps {
         echo 'First Pipeline'
       }
