@@ -46,7 +46,7 @@ NAMESPACE=$NAMESPACE BRANCH=$BRANCH make push
   }
   parameters {
     string(name: 'REPO', defaultValue: 'git@github.com:MichalPecho/DevOps.git', description: 'The git repository')
-    string(name: 'BRANCH', defaultValue: 'master', description: 'Branch to build')
+    string(name: 'BRANCH', defaultValue: 'main', description: 'Branch to build')
     string(name: 'NAMESPACE', defaultValue: 'MichalPecho', description: 'Namespace for the Docker Image')
     string(name: 'REGISTRY', defaultValue: 'index.docker.io', description: 'Registry to be used')
   }
